@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/chat_msg_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+            <ImageButton
+                android:id="@+id/chat_msg_face"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/icon_face_normal"/>
+            <ImageButton
+                android:id="@+id/chat_msg_add"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_toRightOf="@+id/chat_msg_face"
+                android:src="@drawable/icon_more_normal"/>
+            <EditText
+                android:id="@+id/chat_msg_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/chat_msg_add"
+                android:layout_toLeftOf="@+id/chat_msg_send"
+                />
+            <ImageButton
+                android:id="@+id/chat_msg_send"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:src="@android:drawable/ic_menu_send"/>
+        </RelativeLayout>
+        <FrameLayout
+            android:id="@+id/chat_emojicons"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:visibility="gone"
+            />
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/chat_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/home_toolbar"
+        android:layout_above="@id/chat_msg_input"
+        android:scrollbars="none"
+        android:background="#f3f2f7"
+        ></android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>

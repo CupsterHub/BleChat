@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cupster.blechat.MainActivity">
+
+
+    <!--欢迎页  广告图-->
+    <ImageView
+        android:id="@+id/welcome_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <!--右下角 跳过 按钮-->
+    <Button
+        android:id="@+id/welcome_skip"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:text="@string/skip"
+        android:textSize="14sp"
+
+        android:background="@drawable/shape_btn"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="30dp"
+        />
+
+</RelativeLayout>

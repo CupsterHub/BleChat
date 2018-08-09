@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BleChat</string>
+    <string name="abc_description">descript</string>
+    <string name="abc_description_format">format</string>
+
+    <string name="skip">跳过</string>
+    <string name="ad_url"></string>
+</resources>
